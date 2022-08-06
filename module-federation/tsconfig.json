@@ -10,6 +10,11 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "target": "es2020",
+    "paths": {
+      "shared": [
+        "dist/shared"
+      ]
+    },
     "module": "es2020",
     "lib": [
       "es2018",

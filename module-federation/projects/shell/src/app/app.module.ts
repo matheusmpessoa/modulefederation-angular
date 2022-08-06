@@ -1,11 +1,12 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
-import { AngularMaterialModule } from './shared/modules/material.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { APP_ROUTES } from './app.routes';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { SharedModule } from 'projects/shared/src/lib/shared.module';
+import { AngularMaterialModule } from 'projects/shared/src/lib/material.module';
 
 @NgModule({
   imports: [
@@ -19,6 +20,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
     NotFoundComponent
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [
+    AppComponent
+  ]
 })
 export class AppModule { }

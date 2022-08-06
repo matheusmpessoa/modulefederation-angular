@@ -5,12 +5,15 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { ReportModule } from './reports/reports.module';
 import { APP_ROUTES } from './app.routes';
+import { SharedModule } from 'projects/shared/src/lib/shared.module';
+import { AngularMaterialModule } from 'projects/shared/src/lib/material.module';
 
 @NgModule({
   imports: [
     BrowserModule,
     CommonModule,
     ReportModule,
+    AngularMaterialModule,
     RouterModule.forRoot(APP_ROUTES)
   ],
   declarations: [
