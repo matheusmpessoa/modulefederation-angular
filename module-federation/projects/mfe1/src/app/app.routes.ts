@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
+import { FinanceReportsComponent } from './reports/finance-reports/finance-reports.component';
 
 export const APP_ROUTES: Routes = [
-    { path: '', component: HomeComponent, pathMatch: 'full'}
+    { path: '', component: FinanceReportsComponent, pathMatch: 'full' }
 ];

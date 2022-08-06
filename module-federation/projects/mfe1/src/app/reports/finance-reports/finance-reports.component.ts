@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './finance-reports.component.html',
   styleUrls: ['./finance-reports.component.scss']
 })
-export class ReportComponent {
+export class FinanceReportsComponent {
 
   search(): void {
     alert('Not implemented for this demo!');

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { ReportComponent } from './finance-reports/finance-reports.component';
+import { FinanceReportsComponent } from './finance-reports/finance-reports.component';
 import { REPORTS_ROUTES } from './reports.routes';
 
 @NgModule({
@@ -10,7 +10,7 @@ import { REPORTS_ROUTES } from './reports.routes';
     RouterModule.forChild(REPORTS_ROUTES)
   ],
   declarations: [
-    ReportComponent
+    FinanceReportsComponent
   ]
 })
 export class ReportModule { }
