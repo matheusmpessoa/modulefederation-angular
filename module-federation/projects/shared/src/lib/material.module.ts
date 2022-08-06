@@ -18,7 +18,6 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatStepperModule } from '@angular/material/stepper';
 import { MatTabsModule } from '@angular/material/tabs';
-import { MatExpansionModule } from '@angular/material/expansion';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatIconModule } from '@angular/material/icon';
@@ -30,6 +29,9 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatTableModule } from '@angular/material/table';
 import { MatSortModule } from '@angular/material/sort';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { CdkAccordionModule } from '@angular/cdk/accordion';
+import { MatExpansionModule } from '@angular/material/expansion';
+
 @NgModule( {
     imports: [
         CommonModule,
@@ -51,7 +53,6 @@ import { MatPaginatorModule } from '@angular/material/paginator';
         MatCardModule,
         MatStepperModule,
         MatTabsModule,
-        MatExpansionModule,
         MatButtonToggleModule,
         MatChipsModule,
         MatIconModule,
@@ -62,7 +63,9 @@ import { MatPaginatorModule } from '@angular/material/paginator';
         MatSnackBarModule,
         MatTableModule,
         MatSortModule,
-        MatPaginatorModule
+        MatPaginatorModule,
+        CdkAccordionModule,
+        MatExpansionModule,
     ],
     exports: [
         MatButtonModule,
@@ -80,7 +83,8 @@ import { MatPaginatorModule } from '@angular/material/paginator';
         MatChipsModule,
         MatTooltipModule,
         MatTableModule,
-        MatPaginatorModule
+        MatPaginatorModule,
+        CdkAccordionModule
     ],
     providers: [
         MatDatepickerModule,
