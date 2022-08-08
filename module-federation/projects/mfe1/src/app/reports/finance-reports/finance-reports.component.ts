@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FinancialReport } from 'projects/shared/src/lib/models/reports';
+import { SharedService } from 'projects/shared/src/lib/shared.service';
 
 @Component({
   selector: 'app-finance-reports',
@@ -6,17 +8,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./finance-reports.component.scss']
 })
 export class FinanceReportsComponent implements OnInit {
+  public finaceReportData: FinancialReport;
 
-  constructor() { }
+  constructor(
+    private sharedService: SharedService
+  ) { }
 
-  ngOnInit() { }
-
-  search(): void {
-    alert('Not implemented for this demo!');
+  ngOnInit() {
+    this.getFinancialReport();
   }
 
-  terms(): void {
-    alert('Not implemented for this demo!');
+  private getFinancialReport() {
+    this.sharedService.getFinancialReports()
+      .subscribe(
+        (res) => { this.finaceReportData = res; },
+        (error) => { console.log('error getFinancialReport', error); }
+      );
   }
-
 }

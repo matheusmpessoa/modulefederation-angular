@@ -1,0 +1,52 @@
+{
+  "travels": [
+    {
+      "id": 1,
+      "city": "Kingston",
+      "name": "some comment",
+      "deadline": "20/07/2022",
+      "passengers": [
+        {
+          "name": "Marie",
+          "id": 1,
+          "checked": true
+        },
+        {
+          "name": "Anne",
+          "id": 1,
+          "checked": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "city": "New York",
+      "name": "some comment",
+      "deadline": "20/07/2022",
+      "passengers": [
+        {
+          "name": "Julia",
+          "id": 1,
+          "checked": true
+        },
+        {
+          "name": "Michael",
+          "id": 1,
+          "checked": false
+        },
+        {
+          "name": "Robert",
+          "id": 1,
+          "checked": true
+        }
+      ]
+    }
+  ],
+  "financial-report": {
+    "id": 1,
+    "year": "2022",
+    "type": "PDF",
+    "link": "https://github.com/matheusmpessoa/modulefederation-angular",
+    "content": "lorem ipsum"
+  }
+}

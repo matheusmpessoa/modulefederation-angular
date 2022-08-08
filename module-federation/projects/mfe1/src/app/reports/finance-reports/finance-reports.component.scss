@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 60vw;
+  margin: 0 auto;
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+  }
+  
+  textarea {
+    height: 200px !important;
+  }
+
+  .grow1 {
+    flex-grow: 1;
+  }
+}
