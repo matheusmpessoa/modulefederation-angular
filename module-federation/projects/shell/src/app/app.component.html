@@ -1,7 +1,12 @@
 <mat-toolbar color="primary">
-    <mat-toolbar-row>
-        <button mat-flat-button color="primary" routerLink="/">Travels</button>
-        <button mat-flat-button color="primary" routerLink="/reports/finance-reports">Report App</button>
+    <mat-toolbar-row style="display: flex; margin: 0 auto; max-width: 65%;">
+        <div class="toolbar-buttons">
+            <button mat-flat-button color="primary" routerLink="/">Travels</button>
+            <button mat-flat-button color="primary" routerLink="/reports/finance-reports">Report App</button>
+        </div>
+        <span class="spacer"></span>
+        <mat-icon aria-hidden="false" aria-label="User icon" fontIcon="person"></mat-icon>
+        <span class="user-info">user_email@test.com</span>
     </mat-toolbar-row>
 </mat-toolbar>
 

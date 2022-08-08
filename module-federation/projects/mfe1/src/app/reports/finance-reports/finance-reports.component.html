@@ -1,18 +1,18 @@
 <section>
-    <mat-card class="container">
+    <mat-card>
         <div class="header">
             <h2>Finance Reports</h2>
             <p>Here you can get the finance report for the current year.</p>
         </div>
 
         <div class="content">
-            <div>{{ finaceReportData?.year }}</div>
+            <p>{{ finaceReportData?.year }}</p>
             <div>
                 <button mat-raised-button color="primary">DOWNLOAD {{ finaceReportData?.type }}</button>
             </div>
         </div>
         <hr>
-        <mat-form-field appearance="fill">
+        <mat-form-field appearance="fill" style="background-color: #fff; width: 100%;">
             <mat-label></mat-label>
             <textarea matInput>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus quae fugit temporibus minima optio inventore iusto ea iure natus quia eum magni iste, modi ut distinctio quas nemo nam illum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus quae fugit temporibus minima optio inventore iusto ea iure natus quia eum magni iste, modi ut distinctio quas nemo nam illum?
             </textarea>

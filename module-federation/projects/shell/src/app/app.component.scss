@@ -1,3 +1,17 @@
+.spacer {
+  flex: 1 1 auto;
+}
+
+button,
+.user-info {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
 .container {
+  display: flex;
+  flex-direction: column;
+  max-width: 60vw;
   padding: 16px;
+  margin: 0 auto;
 }
