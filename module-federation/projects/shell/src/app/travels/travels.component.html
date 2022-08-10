@@ -1,5 +1,18 @@
-<section>
+<section class="travels">
   <h2>Travels Management</h2>
   
   <p>Please full fill the travels with passengers before the data limit.</p>
+
+  <mat-accordion>
+    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title>Trains</mat-panel-title>
+      </mat-expansion-panel-header>
+      <div class="transports">
+        <div class="transports__city" *ngFor="let travels of travelsData; index as i;">
+          {{ travels.city }}
+        </div>
+      </div>
+    </mat-expansion-panel>
+  </mat-accordion>
 </section>

@@ -31,7 +31,6 @@ import { MatSortModule } from '@angular/material/sort';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { CdkAccordionModule } from '@angular/cdk/accordion';
 import { MatExpansionModule } from '@angular/material/expansion';
-
 @NgModule( {
     imports: [
         CommonModule,
@@ -84,7 +83,8 @@ import { MatExpansionModule } from '@angular/material/expansion';
         MatTooltipModule,
         MatTableModule,
         MatPaginatorModule,
-        CdkAccordionModule
+        CdkAccordionModule,
+        MatExpansionModule
     ],
     providers: [
         MatDatepickerModule,
